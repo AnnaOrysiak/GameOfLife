@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Life</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+    <h1>Game of Life</h1>
+    <p>Rules:</p>
+    <ul>
+        <li>Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.</li>
+        <li>Any live cell with two or three live neighbors lives on to the next generation (in other case a cell dies).</li>
+        <li>Mark cells on the board and play!</li>
+    </ul>
+    </header>
+    <main>
+        <form action="">
+
+                <script type="text/javascript"><!--
+                    document.write("<table cellspacing='0' cellpadding='0'>");
+                    for (i=0; i<rows; i++)
+                    {
+                      document.write("<tr>");
+                      for (j=0; j<columns; j++)
+                      {
+                        document.write("<td><a href='javascript:changeStatus("+j+","+i+");'><img src='dead.jpg'></a></td>");
+                      }
+                      document.write("</tr>");
+                    }
+                    document.write("</table>");
+                    //--></script>
+
+            <div class="gameControls clearfix">
+                <input type="button" value="Play" onclick="play('once');">
+                <input type="button" value="Autoplay" onclick="play('infinite');" class="switcher">
+                <input type="button" value="Stop" onclick="play('stop');" class="switcher">
+                <input type="button" value="Clear" onclick="clearAll();">
+            </div> 
+        </form>
+    </main>
+</body>
+</html>
