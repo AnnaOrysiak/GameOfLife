@@ -32,7 +32,6 @@ countNeighbors = (x,y) => {
             } 
         }
     }
-    return cellsArea[x][y].neighbors;
 }
 
 // Utrzymywanie komórki przy życiu
